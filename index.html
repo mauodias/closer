@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Linking the LinkedIn JavaScript file --!>
+	<!-- The 'authorize' parameter is set to automatically login users who already granted permission to the application --!>
+	<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+  		api_key: knwn4c3kvf95
+  		authorize: true
+	</script>
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <title>Hello World</title>
 </head>
@@ -17,5 +23,9 @@
          document.addEventListener("webworksready", ready);
       }, false);
    </script>
+   <!-- Testing the LinkedIn sign in button -->
+   <script type="in/Login">
+		Hello, <?js= firstName ?> <?js= lastName ?>.
+	</script>
 </body>
 </html>
